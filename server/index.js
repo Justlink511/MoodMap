@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://votre-username.github.io']  // Remplacez par votre nom d'utilisateur GitHub
+    ? [ 'https://justlink511.github.io']  // Remplacez par votre nom d'utilisateur GitHub
     : 'http://localhost:3000',
   credentials: true
 }));
