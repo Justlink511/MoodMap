@@ -25,16 +25,10 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          NEXT_PUBLIC_BASE_PATH: '/mood-map'
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
           branch: gh-pages
-          clean: true
-          clean-exclude: |
-            .git
-            .gitignore
-          target-folder: mood-map 
+          clean: true 

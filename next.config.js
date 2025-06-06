@@ -7,10 +7,12 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  distDir: 'out',
-  images: {
-    unoptimized: true,
+  // Désactiver certaines optimisations pour le déploiement statique
+  swcMinify: false,
+  compiler: {
+    removeConsole: false,
   },
+  // Forcer le mode statique
   experimental: {
     appDir: false,
   }
