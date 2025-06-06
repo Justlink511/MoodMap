@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/mood-map',
-  assetPrefix: '/mood-map/',
+  basePath: '',
+  assetPrefix: '',
   images: {
     unoptimized: true,
   },
