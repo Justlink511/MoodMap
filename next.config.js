@@ -7,6 +7,8 @@ const nextConfig = {
   basePath: '/mood-map',
   assetPrefix: '/mood-map/',
   trailingSlash: true,
+  distDir: 'out',
+  poweredByHeader: false,
 }
 
 module.exports = nextConfig 
